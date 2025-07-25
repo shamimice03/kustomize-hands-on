@@ -7,8 +7,20 @@ resources:
   - ../../base
   - config.yaml
 
+components:
+  - ../../components/db
+
 patches:
   - path: patch-deployment.yaml
     target:
       kind: Deployment
       name: nginx-deployment
+
+configMapGenerator:
+  - name: nginx-config
+    behavior: merge # merge with base
+    envs:
+      - application.properties # envs
+  - name: application-properties
+    files:
+      - application.properties # as file
