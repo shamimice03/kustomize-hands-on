@@ -1,4 +1,4 @@
-# Commands
+# commands
 ```bash
 kustomize build k8s
 
@@ -21,8 +21,8 @@ kustomize build patch-json6902
 kustomize build patch-strategic-merge-patch
 ```
 
-## Complete
+## complete
 ```
- k create -k overlays/prod
-  k create -k overlays/stg
+k create -k overlays/prod
+k create -k overlays/stg
 ```
