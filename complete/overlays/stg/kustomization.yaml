@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+patches:
+  - path: service-patch.yaml
+    target:
+      kind: Service
+      name: nginx-service
+namespace: stg

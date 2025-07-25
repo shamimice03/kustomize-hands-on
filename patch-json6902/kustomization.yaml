@@ -1,0 +1,20 @@
+resources:
+  - deployment.yaml
+patches:
+  - target:
+      kind: Deployment
+      name: nginx-deployment
+    patch: |-
+      - op: replace
+        path: /spec/template/metadata/labels/app
+        value: test
+      - op: add
+        path: /spec/template/metadata/labels/org
+        value: cloudterms
+      - op: remove
+        path: /spec/template/metadata/labels/hello
+      - op: add
+        path: /spec/template/spec/containers/- 
+        value: 
+          name: haproxy
+          image: haproxy

@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: test
+commonAnnotations:
+  branch: test
+commonLabels:
+  org: cloudterms
+
+images:
+  - name: nginx # current image
+    newName: haproxy # new image
+    newTag: "2.4"
+
+resources:
+  - external/
+  - internal/
+
+nameSuffix: -cloudterms

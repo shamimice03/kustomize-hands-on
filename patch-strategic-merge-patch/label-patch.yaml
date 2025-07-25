@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: test
+        org: cloudterms
+        hello: null
+    spec:
+      containers:
+        - name: haproxy
+          image: haproxy:1.25
+        - name: mongo
+          $patch: delete

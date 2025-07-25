@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  env: "prod"
+  app_name: "nginx-app"
+  log_level: "info"
