@@ -34,3 +34,5 @@ k create -k overlays/stg
 - https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 
 - https://kubectl.docs.kubernetes.io/references/kustomize/
+
+- https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/48273331#announcements
