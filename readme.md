@@ -26,3 +26,11 @@ kustomize build patch-strategic-merge-patch
 k create -k overlays/prod
 k create -k overlays/stg
 ```
+
+
+## References:
+- https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/2025-Updates-Kustomize-Basics/Components 
+
+- https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+
+- https://kubectl.docs.kubernetes.io/references/kustomize/
